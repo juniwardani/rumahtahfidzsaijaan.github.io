@@ -1,0 +1,384 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donasi - Rumah Tahfidz Saijaan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+:root {
+  --primary-color: #8a0f15;
+  --secondary-color: #ffffff;
+  --tertiary-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.page-header {
+  background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/donasi-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.donasi-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.donasi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #6d0c11;
+  border-color: #6d0c11;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.social-icons a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--tertiary-color);
+}
+
+.bank-info {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bank-info img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    height: 200px;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="../img/logo.jpg" alt="Logo Rumah Tahfidz Saijaan" width="40" height="40" class="d-inline-block align-top">
+      <span class="ms-2">RUMAH TAHFIDZ SAIJAAN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tentang Kami.html">Tentang Kami</a></li>
+	<li class="nav-item"><a class="nav-link" href="Program.html">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kegiatan.html">Kegiatan</a></li>
+        <li class="nav-item"><a class="nav-link" href="Donasi.html">Donasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="Registrasi.html">Registrasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container text-center">
+    <h1 class="font-weight-bold">Donasi untuk Rumah Tahfidz Saijaan</h1>
+    <p class="lead">Bantu kami mencetak generasi Qur'ani yang berakhlak mulia</p>
+  </div>
+</header>
+
+<style>
+  .page-header {
+      background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/registrasi-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column; /* Membuat layout kolom */
+      align-items: center;
+      justify-content: flex-end; /* Posisikan ke bagian bawah */
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--secondary-color);
+  }
+  
+  .page-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+  }
+  
+  .page-header p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+      .page-header {
+          height: 200px;
+          padding: 1.5rem 1rem;
+      }
+  
+      .page-header h1 {
+          font-size: 2rem;
+      }
+  
+      .page-header p.lead {
+          font-size: 1rem;
+      }
+  }
+  </style>
+  
+
+
+<main class="container my-5">
+  <section class="mb-5">
+    <h2 class="section-title text-center">Pilihan Donasi</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card donasi-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Donasi Umum</h5>
+            <p class="card-text">Donasi untuk operasional Rumah Tahfidz Saijaan</p>
+            <a href="#form-donasi" class="btn btn-primary">Donasi Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card donasi-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Beasiswa Santri</h5>
+            <p class="card-text">Bantu santri kurang mampu untuk menghafal Al-Qur'an</p>
+            <a href="#form-donasi" class="btn btn-primary">Donasi Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card donasi-card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pembangunan Asrama</h5>
+            <p class="card-text">Dukung pembangunan asrama baru untuk santri</p>
+            <a href="#form-donasi" class="btn btn-primary">Donasi Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <style>
+        /* Bagian utama Cara Berdonasi */
+        .cara-berdonasi-section {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Judul section */
+        .cara-berdonasi-section .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        /* Gaya untuk card donasi */
+        .cara-berdonasi-section .bank-info,
+        .cara-berdonasi-section .cash-donation {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .cara-berdonasi-section .bank-info:hover,
+        .cara-berdonasi-section .cash-donation:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Gaya untuk gambar logo bank */
+        .bank-logo {
+            max-width: 150px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .bank-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Gaya teks judul di dalam card */
+        .cara-berdonasi-section h5 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+    </style>
+
+<section class="mb-5 cara-berdonasi-section">
+    <h2 class="section-title">Cara Berdonasi</h2>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="bank-info">
+                <img src="../img/logobsi.png" alt="Logo Bank Mandiri" class="mb-3 img-fluid bank-logo">
+                <h5>Bank Mandiri</h5>
+                <p>No. Rekening: 4688888846</p>
+                <p>Atas Nama: Rumah Tahfidz Saijaan</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="cash-donation">
+                <img src="../img/tunai.jpg" alt="Logo Donasi" class="mb-3 img-fluid bank-logo">
+		<h5>Donasi Tunai</h5>
+                <p>Sekretariat: Jl. Brigjend H. Hasan Basri Desa Semayap</p>
+                <p>Hubungi: +62 852 4846 2707 (Ust. Abdur Rahim, S.Pd.I)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+<section id="form-donasi" class="mb-5 text-center">
+  <h2 class="section-title">Form Donasi</h2>
+  <div class="d-flex justify-content-center">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLUk3f9Z2slLLY97CuUHnNLsyTsZ9PVdEna8wWu_XLaGBAAg/viewform?embedded=true" width="640" height="1276" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+  </div>
+</section>
+
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Laporan Penggunaan Dana</h2>
+    <p class="text-center mb-4">Kami berkomitmen untuk transparan dalam penggunaan dana donasi. Berikut adalah laporan penggunaan dana donasi:</p>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Jenis Penggunaan</th>
+            <th>Jumlah (Rp)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 Mei 2023</td>
+            <td>Pembayaran Honor Guru Tahfidz</td>
+            <td>5.000.000</td>
+          </tr>
+          <tr>
+            <td>5 Mei 2023</td>
+            <td>Pembelian Al-Qur'an</td>
+            <td>2.500.000</td>
+          </tr>
+          <tr>
+            <td>10 Mei 2023</td>
+            <td>Biaya Operasional Asrama</td>
+            <td>3.000.000</td>
+          </tr>
+          <tr>
+            <td>15 Mei 2023</td>
+            <td>Beasiswa Santri</td>
+            <td>4.000.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-3">
+      <a href="/laporan-keuangan" class="btn btn-primary">Lihat Laporan Lengkap</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Rumah Tahfidz Saijaan</h5>
+        <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Kontak</h5>
+        <p>Telepon: +62 852 4846 2707<br>Email: rumahtahfidzsaijaan@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Ikuti Kami</h5>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/p/Rumah-Tahfidz-Saijaan-Kotabaru-100068326836308/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/rumahtahfidzsaijaan"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@rumahtahfidzsaijaan5772"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6285248462707"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p>Design By : Juni Wardani &copy; 2024 Rumah Tahfidz Saijaan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Here you would typically send the form data to a server
+    // For this example, we'll just show an alert
+    alert('Terima kasih atas donasi Anda! Kami akan menghubungi Anda untuk konfirmasi pembayaran.');
+  });
+});
+</script>
+</body></html>

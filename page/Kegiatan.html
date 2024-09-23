@@ -1,0 +1,348 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kegiatan - Rumah Tahfidz Saijaan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+:root {
+  --primary-color: #8a0f15;
+  --secondary-color: #ffffff;
+  --tertiary-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.page-header {
+  background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/kegiatan-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.kegiatan-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.kegiatan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kegiatan-card .card-title {
+  color: var(--primary-color);
+}
+
+.kegiatan-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #6d0c11;
+  border-color: #6d0c11;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.social-icons a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    height: 200px;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="../img/logo.jpg" alt="Logo Rumah Tahfidz Saijaan" width="40" height="40" class="d-inline-block align-top">
+      <span class="ms-2">RUMAH TAHFIDZ SAIJAAN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tentang Kami.html">Tentang Kami</a></li>
+	<li class="nav-item"><a class="nav-link" href="Program.html">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kegiatan.html">Kegiatan</a></li>
+        <li class="nav-item"><a class="nav-link" href="Donasi.html">Donasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="Registrasi.html">Registrasi</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container text-center">
+    <h1>Kegiatan Rumah Tahfidz Saijaan</h1>
+  </div>
+</header>
+
+<style>
+  .page-header {
+      background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/registrasi-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column; /* Membuat layout kolom */
+      align-items: center;
+      justify-content: flex-end; /* Posisikan ke bagian bawah */
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--secondary-color);
+  }
+  
+  .page-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+  }
+  
+  .page-header p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+      .page-header {
+          height: 200px;
+          padding: 1.5rem 1rem;
+      }
+  
+      .page-header h1 {
+          font-size: 2rem;
+      }
+  
+      .page-header p.lead {
+          font-size: 1rem;
+      }
+  }
+  </style>
+  
+
+<main class="container my-5">
+  <section class="mb-5">
+    <h2 class="section-title text-center">Kegiatan Rutin</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Kegiatan Tahfidz Pagi">
+          <div class="card-body">
+            <h5 class="card-title">Raudhatul Athfal Tahfidzi</h5>
+            <p class="card-text">RA Tahfidzi di Rumah Tahfidz Saijaan adalah program Pendidikan Anak Usia Dini setara TK yang bertujuan untuk mengenalkan anak-anak pada nilai-nilai keagamaan sejak dini. Dalam suasana yang menyenangkan dan mendukung, anak-anak diajarkan teknik penghafalan Al-Qur'an serta pemahaman dasar tentang isi dan makna ayat-ayat yang dihafal. Program ini dirancang untuk membangun kecintaan terhadap Al-Qur'an dan membentuk fondasi spiritual yang kuat, sambil mengembangkan keterampilan sosial dan kognitif anak.</p>
+            <a href="/kegiatan/tahfidz-pagi" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Kegiatan Tahsin Sore">
+          <div class="card-body">
+            <h5 class="card-title">Tahfidz dan Tilawati</h5>
+            <p class="card-text">Program Tahfidz dan Tilawati di Rumah Tahfidz Saijaan berfokus pada pengembangan kemampuan menghafal dan membaca Al-Qur'an dengan baik dan benar. Program Tahfidz mengajarkan teknik penghafalan yang efektif, membantu peserta dalam mengingat dan memahami ayat-ayat Al-Qur'an. Sementara itu, program Tilawati menekankan pada pembelajaran tajwid dan pelafalan yang tepat, sehingga peserta dapat membaca Al-Qur'an dengan indah dan benar. Kedua program ini bertujuan untuk menciptakan generasi yang mencintai Al-Qur'an dan memahami maknanya secara mendalam.</p>
+            <a href="/kegiatan/tahsin-sore" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Kegiatan Kajian Malam">
+          <div class="card-body">
+            <h5 class="card-title">Kajian Kitab Aqidatul Awam</h5>
+            <p class="card-text">Kajian Kitab Aqidatul Awam di Rumah Tahfidz Saijaan bertujuan untuk memberikan pemahaman yang mendalam tentang dasar-dasar aqidah Islam. Kitab ini menjelaskan konsep-konsep fundamental dalam akidah, seperti keyakinan terhadap Allah, para rasul, kitab-kitab-Nya, dan hari kiamat. Melalui kajian ini, peserta diajak untuk memahami dan menghayati ajaran Islam secara benar, sehingga dapat membangun keimanan yang kokoh dan menjawab berbagai pertanyaan tentang agama. Kajian ini juga diharapkan dapat membentuk karakter dan perilaku yang sesuai dengan ajaran Islam.</p>
+            <a href="/kegiatan/kajian-malam" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Kegiatan Khusus</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Wisuda Tahfidz">
+          <div class="card-body">
+            <h5 class="card-title">Wisuda Tahfidz</h5>
+            <p class="card-text">Acara tahunan untuk merayakan keberhasilan para santri yang telah menyelesaikan hafalan Al-Qur'an.</p>
+            <a href="/kegiatan/wisuda-tahfidz" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Lomba Tahfidz">
+          <div class="card-body">
+            <h5 class="card-title">Lomba Tahfidz</h5>
+            <p class="card-text">Kompetisi menghafal Al-Qur'an yang diadakan setiap semester untuk memotivasi para santri.</p>
+            <a href="/kegiatan/lomba-tahfidz" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Kegiatan Sosial</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Santunan Anak Yatim">
+          <div class="card-body">
+            <h5 class="card-title">Santunan Anak Yatim</h5>
+            <p class="card-text">Program bantuan untuk anak-anak yatim di sekitar Rumah Tahfidz Saijaan.</p>
+            <a href="/kegiatan/santunan-yatim" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Buka Puasa Bersama">
+          <div class="card-body">
+            <h5 class="card-title">Buka Puasa Bersama</h5>
+            <p class="card-text">Acara berbuka puasa bersama masyarakat sekitar selama bulan Ramadhan.</p>
+            <a href="/kegiatan/buka-puasa" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card kegiatan-card">
+          <img src="../img/kegiatan.jpg" class="card-img-top" alt="Bakti Sosial">
+          <div class="card-body">
+            <h5 class="card-title">Bakti Sosial</h5>
+            <p class="card-text">Kegiatan sosial yang melibatkan santri untuk membantu masyarakat sekitar.</p>
+            <a href="/kegiatan/bakti-sosial" class="btn btn-primary">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Jadwal Kegiatan</h2>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Kegiatan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin - Jumat</td>
+            <td>05:00 - 06:30</td>
+            <td>Tahfidz Pagi</td>
+          </tr>
+          <tr>
+            <td>Senin - Jumat</td>
+            <td>16:00 - 17:30</td>
+            <td>Tahsin Sore</td>
+          </tr>
+          <tr>
+            <td>Senin - Kamis</td>
+            <td>20:00 - 21:30</td>
+            <td>Kajian Malam</td>
+          </tr>
+          <tr>
+            <td>Sabtu</td>
+            <td>08:00 - 11:00</td>
+            <td>Belajar Bahasa Arab</td>
+          </tr>
+          <tr>
+            <td>Minggu</td>
+            <td>09:00 - 12:00</td>
+            <td>Olahraga dan Ekstrakurikuler</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Rumah Tahfidz Saijaan</h5>
+        <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Kontak</h5>
+        <p>Telepon: +62 852 4846 2707<br>Email: rumahtahfidzsaijaan@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Ikuti Kami</h5>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/p/Rumah-Tahfidz-Saijaan-Kotabaru-100068326836308/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/rumahtahfidzsaijaan"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@rumahtahfidzsaijaan5772"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6285248462707"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p>Design By : Juni Wardani &copy; 2024 Rumah Tahfidz Saijaan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

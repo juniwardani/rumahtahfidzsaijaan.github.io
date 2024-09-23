@@ -1,0 +1,276 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumah Tahfidz Saijaan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+:root {
+  --primary-color: #8a0f15;
+  --secondary-color: #ffffff;
+  --tertiary-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-section {
+  background: url('img/pengelola.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh; /* Mengurangi tinggi untuk perangkat yang lebih kecil */
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 50vh; /* Ukuran yang lebih kecil untuk perangkat mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-section, .programs-section, .activities-section {
+  padding: 5rem 0;
+  background-color: var(--tertiary-color);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.social-icons a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="img/logo.jpg" alt="Logo Rumah Tahfidz Saijaan" width="40" height="40" class="d-inline-block align-top">
+      <span class="ms-2">RUMAH TAHFIDZ SAIJAAN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="page/Tentang Kami.html">Tentang Kami</a></li>
+	<li class="nav-item"><a class="nav-link" href="page/Program.html">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="page/Kegiatan.html">Kegiatan</a></li>
+        <li class="nav-item"><a class="nav-link" href="page/Donasi.html">Donasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="page/Kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="page/Registrasi.html">Registrasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Rumah Tahfidz Saijaan</h1>
+      <p><strong> Mewujudkan Generasi Qurani yang Berakhlak Mulia</strong></p>
+      <a href="page/Tentang Kami.html" class="btn btn-custom btn-lg">Pelajari Lebih Lanjut</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <h2 class="section-title text-center">Sekilas Tentang Kami</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Rumah Tahfidz Saijaan adalah lembaga pendidikan Al-Qur'an yang berdedikasi untuk membentuk generasi hafiz dan hafizah yang berakhlak mulia. Kami berkomitmen untuk memberikan pendidikan Al-Qur'an berkualitas dengan metode yang efektif dan menyenangkan.</p>
+      </div>
+      <div class="col-md-6">
+        <p>Visi kami adalah menjadi pusat unggulan dalam pengajaran dan penghafalan Al-Qur'an, serta pembinaan akhlak Islami. Misi kami meliputi pengembangan metode pembelajaran Al-Qur'an yang inovatif, pembinaan karakter Islami, dan pemberdayaan masyarakat melalui program-program Qur'ani.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="programs-section">
+<div class="container">
+  <h2 class="section-title text-center">Program Unggulan</h2>
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Program Tilawati Anak-Anak</h5>
+          <p class="card-text">Program intensif untuk anak-anak dalam menghafal Al-Qur'an dengan metode yang menyenangkan dan efektif.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Majelis Kajian Kitab Aqidatul Awam</h5>
+          <p class="card-text">Kajian mendalam tentang dasar-dasar aqidah Islam untuk memperkuat pemahaman agama.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Program Tilawati Dewasa</h5>
+          <p class="card-text">Program pembelajaran Al-Qur'an untuk orang dewasa dengan metode Tilawati yang sistematis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Simpanan Aqiqah & Qurban</h5>
+          <p class="card-text">Layanan untuk membantu masyarakat dalam menabung dan mempersiapkan Aqiqah dan Qurban dengan mudah dan terencana.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section class="cta-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Bergabunglah dengan Kami</h2>
+    <p class="mb-4">Daftarkan diri Anda atau putra-putri Anda untuk program-program unggulan kami.</p>
+    <a href="page/Registrasi.html" class="btn btn-lg" style="background-color: #8a0f15; color: white;">DAFTAR SEKARANG</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Rumah Tahfidz Saijaan</h5>
+        <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Kontak</h5>
+        <p>Telepon: +62 852 4846 2707<br>Email: rumahtahfidzsaijaan@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Ikuti Kami</h5>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/p/Rumah-Tahfidz-Saijaan-Kotabaru-100068326836308/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/rumahtahfidzsaijaan"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@rumahtahfidzsaijaan5772"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6285248462707"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p>Design By : Juni Wardani &copy; 2024 Rumah Tahfidz Saijaan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

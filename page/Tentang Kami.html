@@ -1,0 +1,489 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tentang Kami - Rumah Tahfidz Saijaan</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+:root {
+  --primary-color: #8a0f15;
+  --secondary-color: #ffffff;
+  --tertiary-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.page-header {
+  background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/about-us-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-card .card-title {
+  color: var(--primary-color);
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background-color: var(--primary-color);
+}
+
+.timeline > li {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  float: left;
+  position: relative;
+  width: 46%;
+  padding: 20px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.timeline > li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li .timeline-badge {
+  z-index: 100;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 50px;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.social-icons a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    height: 200px;
+  }
+  
+  .timeline:before {
+    left: 40px;
+  }
+  
+  .timeline > li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+  
+  .timeline > li .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+  
+  .timeline > li .timeline-panel {
+    float: right;
+  }
+  
+  .timeline > li .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  
+  .timeline > li .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="../img/logo.jpg" alt="Logo Rumah Tahfidz Saijaan" width="40" height="40" class="d-inline-block align-top">
+      <span class="ms-2">RUMAH TAHFIDZ SAIJAAN</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tentang Kami.html">Tentang Kami</a></li>
+	<li class="nav-item"><a class="nav-link" href="Program.html">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kegiatan.html">Kegiatan</a></li>
+        <li class="nav-item"><a class="nav-link" href="Donasi.html">Donasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kontak.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="Registrasi.html">Registrasi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container text-center">
+    <h1>Tentang Kami</h1>
+  </div>
+</header>
+
+<style>
+  .page-header {
+      background: linear-gradient(rgba(138, 15, 21, 0.7), rgba(138, 15, 21, 0.7)), url('https://example.com/registrasi-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column; /* Membuat layout kolom */
+      align-items: center;
+      justify-content: flex-end; /* Posisikan ke bagian bawah */
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--secondary-color);
+  }
+  
+  .page-header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+  }
+  
+  .page-header p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+      .page-header {
+          height: 200px;
+          padding: 1.5rem 1rem;
+      }
+  
+      .page-header h1 {
+          font-size: 2rem;
+      }
+  
+      .page-header p.lead {
+          font-size: 1rem;
+      }
+  }
+  </style>
+  
+
+<main class="container my-5">
+<section class="mb-5">
+  <h2 class="section-title text-center">Sejarah Rumah Tahfidz Saijaan</h2>
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <p style="text-align: justify;"> 
+        Rumah Tahfidz Saijaan Kotabaru didirikan pada tahun 2011 setelah Ustadz Yusuf Mansyur mengusulkan kepada Bupati Kotabaru, H. Irhami Ridjani, untuk mendirikan tempat menghafal Al-Qur'an. Usulan ini diterima dan terbentuklah tim pengelola Rumah Tahfidz. Awalnya, Rumah Tahfidz berlokasi di Jalan Hasan Basri, kemudian pindah ke Jalan Mufakat Mandin karena dinilai kurang strategis. Pada tahun 2013, lokasi Rumah Tahfidz kembali pindah ke Jalan Hasan Basri secara sewa, hingga pada tahun 2014, Rumah Tahfidz menerima sedekah yang memungkinkan pembukaan dua lokasi: satu di Jalan Hasan Basri untuk santri laki-laki, dan satu lagi di Jalan Selokayang untuk santri perempuan. Pada awal 2015, Badan Pengelola Rumah Tahfidz Saijaan memperoleh pinjaman tanah dan bangunan bekas kebakaran milik Dinas Kesehatan. Setelah direhabilitasi, bangunan tersebut ditempati dan dikelola oleh RUMAH TAHFIDZ SAIJAAN hingga saat ini. Alhamdulillah, pada tanggal 14 September 2024, bertepatan dengan 10 Rabiul Awal 1446 H, Pemerintah Daerah melalui Bupati Kotabaru, H. Sayed Ja'far Alaydrus, S.H., secara resmi menghibahkan tanah dan bangunan tersebut kepada BADAN PENGELOLA RUMAH TAHFIDZ SAIJAAN.
+      </p>
+    </div>
+  </div>
+</section>
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Visi & Misi</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card about-card">
+          <div class="card-body">
+            <h3 class="card-title">Visi</h3>
+            <p class="card-text">Menjadi pusat unggulan dalam pembinaan generasi Qur'ani yang berakhlak mulia, berwawasan luas, dan bermanfaat bagi masyarakat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card about-card">
+          <div class="card-body">
+            <h3 class="card-title">Misi</h3>
+            <ul>
+              <li>Menyelenggarakan program tahfidz Al-Qur'an yang berkualitas dan terintegrasi</li>
+              <li>Membina karakter Islami berdasarkan nilai-nilai Ahlus Sunnah Wal Jama'ah Asy'ariyyah</li>
+              <li>Mengembangkan metode pembelajaran Al-Qur'an yang efektif dan menyenangkan</li>
+              <li>Membangun kerjasama dengan berbagai pihak untuk pengembangan pendidikan Al-Qur'an</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-5">
+    <h2 class="section-title text-center">Sejarah Singkat Rumah Tahfidz Saijaan</h2>
+    <ul class="timeline">
+      <li>
+        <div class="timeline-badge"><i class="fas fa-seedling"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">2011: Pendirian</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Rumah Tahfidz Saijaan didirikan setelah Ustadz Yusuf Mansyur mengusulkan kepada Bupati Kotabaru, H. Irhami Ridjani, untuk mendirikan tempat menghafal Al-Qur'an. Usulan ini diterima dan terbentuklah tim pengelola.</p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-badge"><i class="fas fa-home"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">2013: Pindah Lokasi ke Jalan Hasan Basri</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Rumah Tahfidz pindah dari Jalan Hasan Basri ke Jalan Mufakat Mandin karena dinilai kurang strategis. Kemudian, pada tahun 2013, lokasi kembali ke Jalan Hasan Basri secara sewa.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-badge"><i class="fas fa-award"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">2014: Menerima Hibah Rumah</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Rumah Tahfidz menerima sedekah yang memungkinkan pembukaan dua lokasi: satu di Jalan Hasan Basri untuk santri laki-laki dan satu di Jalan Selokayang untuk santri perempuan.</p>
+          </div>
+        </div>
+      </li>
+      <li class="timeline-inverted">
+        <div class="timeline-badge"><i class="fas fa-users"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">2015: Menempati Bangunan Bekas Dinas Kesehatan</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Badan Pengelola Rumah Tahfidz Saijaan memperoleh pinjaman tanah dan bangunan bekas kebakaran milik Dinas Kesehatan. Setelah direhabilitasi, bangunan tersebut ditempati dan dikelola hingga saat ini.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-badge"><i class="fas fa-expand-alt"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">2024: Hibah Tanah dan Bangunan</h4>
+          </div>
+          <div class="timeline-body">
+            <p>Pada tanggal 14 September 2024, bertepatan dengan 10 Rabiul Awal 1446 H, Pemerintah Daerah melalui Bupati Kotabaru, H. Sayed Ja'far Alaydrus, S.H., secara resmi menghibahkan tanah dan bangunan tersebut kepada Badan Pengelola Rumah Tahfidz Saijaan.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+    
+  <section class="mb-5">
+    <h2 class="section-title text-center">BADAN PENGELOLA RUMAH TAHFIDZ SAIJAAN</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/pakamal.jpg" class="card-img-top" alt="Foto Bapa Kamal">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>Dr. H. AHMAD KAMAL, SHI, M.Ag</strong></h5>
+            <p class="card-text">Ketua Badan Pengelola Rumah Tahfidz Saijaan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/pafitri.jpg" class="card-img-top" alt="Foto Bapa Fitri">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>H. AHMAD FITRIADI FAZ, SH., M.Hum</strong></h5>
+            <p class="card-text">Wakil Ketua Badan Pengelola Rumah Tahfidz Saijaan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/pafadlan.jpg" class="card-img-top" alt="Foto Bapa Fadlan">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>H. MUHAMMAD FADLANI</strong></h5>
+            <p class="card-text">Bendahara Badan Pengelola Rumah Tahfidz Saijaan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/kai.jpg" class="card-img-top" alt="Foto Kai">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>KH. MUCHTASHOR, S.Ag</strong></h5>
+            <p class="card-text">Ketua Harian Rumah Tahfidz Saijaan</p>          
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/pafahrian.jpg" class="card-img-top" alt="Foto Pa Fahrian">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>Tn. GURU FAHRIAN SALAM</strong></h5>
+            <p class="card-text">Sekretaris Harian Rumah Tahfidz Saijaan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card about-card">
+          <img src="../img/ustadz.jpg" class="card-img-top" alt="Foto Pa Fahrian">
+          <div class="card-body text-center">
+            <h5 class="card-title"><strong>USTADZ ABDUR RAHIM, S.Pd.I</strong></h5>
+            <p class="card-text">Pengasuh Rumah Tahfidz Saijaan</p>               
+            </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Rumah Tahfidz Saijaan</h5>
+        <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Kontak</h5>
+        <p>Telepon: +62 852 4846 2707<br>Email: rumahtahfidzsaijaan@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Ikuti Kami</h5>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/p/Rumah-Tahfidz-Saijaan-Kotabaru-100068326836308/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/rumahtahfidzsaijaan"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@rumahtahfidzsaijaan5772"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/6285248462707"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p>Design By : Juni Wardani &copy; 2024 Rumah Tahfidz Saijaan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
