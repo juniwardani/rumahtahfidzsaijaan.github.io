@@ -165,69 +165,60 @@ body {
   </style>
   
 
-  <main class="container my-5">
-    <style>
-      .contact-info {
-          background-color: #f8f9fa; /* Warna latar belakang lembut */
-          border-radius: 10px; /* Sudut yang melengkung */
-          padding: 2rem; /* Ruang di dalam kotak */
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
-      }
-  
-      h2 {
-          color: #8a0f15; /* Warna judul sesuai tema */
-          margin-bottom: 1.5rem;
-      }
-  
-      .contact-info p {
-          margin-bottom: 1rem; /* Jarak antar paragraf */
-      }
-  
-      .contact-info h5 {
-          margin-top: 0.5rem; /* Jarak di atas subjudul */
-          color: #8a0f15; /* Warna subjudul */
-      }
-  
-      .contact-info i {
-          color: #8a0f15; /* Warna ikon */
-          margin-right: 0.5rem; /* Jarak antara ikon dan teks */
-          font-size: 1.2rem; /* Ukuran ikon lebih besar */
-      }
-    </style>
-  
-    <div class="row">
-      <div class="col-md-6">
-        <div class="contact-info">
-          <h2>Informasi Kontak</h2>
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            <h5>Alamat</h5>
-            <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
-          </p>
-          <p>
-            <i class="fas fa-phone"></i>
-            <h5>Telepon</h5>
-            <p>+62 852 4846 2707</p>
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <h5>Email</h5>
-            <p>rumahtahfidzsaijaan@gmail.com</p>
-          </p>
-          <p>
-            <i class="fas fa-clock"></i>
-            Senin - Sabtu: 14.00 - 17.30 WITA
-          </p>
+<main class="container my-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h2 class="section-title">Informasi Kontak</h2>
+      <div class="contact-info">
+        <div class="mb-4">
+          <i class="fas fa-map-marker-alt"></i>
+          <h5>Alamat</h5>
+          <p>Jl. Brigjend H. Hasan Basri<br>Desa Semayap, Kec. Pulau Laut Utara</p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="contact-form">
-          <script type="text/javascript" src="https://form.jotform.com/jsform/242664403376458"></script>
+        <div class="mb-4">
+          <i class="fas fa-phone"></i>
+          <h5>Telepon</h5>
+          <p>+62 852 4846 2707</p>
+        </div>
+        <div class="mb-4">
+          <i class="fas fa-envelope"></i>
+          <h5>Email</h5>
+          <p>rumahtahfidzsaijaan@gmail.com</p>
+        </div>
+        <div>
+          <i class="fas fa-clock"></i>
+          <h5>Jam Operasional</h5>
+          <p>Senin - Jumat: 08.00 - 16.00<br>Sabtu: 09.00 - 13.00</p>
         </div>
       </div>
     </div>
-  </main>
-  
+    <div class="col-md-6">
+      <h2 class="section-title">Kirim Pesan</h2>
+      <form id="contact-form">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" id="nama" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="telepon" class="form-label">Nomor Telepon</label>
+          <input type="tel" class="form-control" id="telepon">
+        </div>
+        <div class="mb-3">
+          <label for="subjek" class="form-label">Subjek</label>
+          <input type="text" class="form-control" id="subjek" required>
+        </div>
+        <div class="mb-3">
+          <label for="pesan" class="form-label">Pesan</label>
+          <textarea class="form-control" id="pesan" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </div>
   
   <div class="mt-5">
     <h2 class="section-title">Lokasi Kami</h2>
